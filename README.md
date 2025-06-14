@@ -205,7 +205,7 @@ Pull requests are welcome! If you'd like to contribute improvements, localizatio
 
 **email:** subuhanabasheer41@gmail.com
 
-**Github:** Subuhana2303
+**Github:** subuhana2303
 
 ---
 
