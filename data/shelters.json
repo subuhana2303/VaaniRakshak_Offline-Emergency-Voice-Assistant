@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Central Community Emergency Shelter",
+    "address": "100 Community Center Drive, Downtown",
+    "capacity": 300,
+    "latitude": 28.6139,
+    "longitude": 77.2090,
+    "facilities": ["Food Distribution", "Medical Aid", "Communications", "Childcare", "Pet Care"],
+    "contact": "Emergency Hotline: 108",
+    "type": "Primary Shelter",
+    "accessibility": true,
+    "operational_hours": "24/7 during emergencies"
+  },
+  {
+    "name": "Riverside School Emergency Center",
+    "address": "250 Oak Street, Riverside District",
+    "capacity": 200,
+    "latitude": 28.6129,
+    "longitude": 77.2080,
+    "facilities": ["Food Distribution", "Basic Medical", "Communications", "Educational Support"],
+    "contact": "Emergency Hotline: 108",
+    "type": "Secondary Shelter",
+    "accessibility": true,
+    "operational_hours": "24/7 during emergencies"
+  },
+  {
+    "name": "Sports Complex Evacuation Site",
+    "address": "75 Stadium Road, Sports District",
+    "capacity": 500,
+    "latitude": 28.6149,
+    "longitude": 77.2100,
+    "facilities": ["Large Capacity Housing", "Food Service", "Medical Station", "Recreation Area"],
+    "contact": "Emergency Hotline: 108",
+    "type": "Large Capacity Shelter",
+    "accessibility": true,
+    "operational_hours": "Activated during major emergencies"
+  },
+  {
+    "name": "Northside Community Hall",
+    "address": "45 North Avenue, Northside",
+    "capacity": 150,
+    "latitude": 28.6159,
+    "longitude": 77.2070,
+    "facilities": ["Food Distribution", "Basic Medical", "Elderly Care"],
+    "contact": "Emergency Hotline: 108",
+    "type": "Neighborhood Shelter",
+    "accessibility": true,
+    "operational_hours": "24/7 during emergencies"
+  },
+  {
+    "name": "Westend Emergency Refuge",
+    "address": "300 West Park Lane, Westend",
+    "capacity": 180,
+    "latitude": 28.6119,
+    "longitude": 77.2060,
+    "facilities": ["Food Service", "Medical Aid", "Mental Health Support", "Communications"],
+    "contact": "Emergency Hotline: 108",
+    "type": "Specialized Care Shelter",
+    "accessibility": true,
+    "operational_hours": "24/7 during emergencies"
+  }
+]

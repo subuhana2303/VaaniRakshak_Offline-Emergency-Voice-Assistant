@@ -1,0 +1,92 @@
+{
+  "default": {
+    "latitude": 28.6139,
+    "longitude": 77.2090,
+    "city": "New Delhi",
+    "state": "Delhi",
+    "country": "India",
+    "region": "Central Delhi"
+  },
+  "emergency_zones": [
+    {
+      "name": "Zone A - Downtown",
+      "latitude": 28.6139,
+      "longitude": 77.2090,
+      "radius_km": 5,
+      "primary_shelter": "Central Community Emergency Shelter",
+      "emergency_contacts": {
+        "police": "100",
+        "fire": "101",
+        "medical": "108",
+        "disaster_management": "1070"
+      }
+    },
+    {
+      "name": "Zone B - Riverside",
+      "latitude": 28.6129,
+      "longitude": 77.2080,
+      "radius_km": 3,
+      "primary_shelter": "Riverside School Emergency Center",
+      "emergency_contacts": {
+        "police": "100",
+        "fire": "101",
+        "medical": "108",
+        "disaster_management": "1070"
+      }
+    },
+    {
+      "name": "Zone C - Sports District",
+      "latitude": 28.6149,
+      "longitude": 77.2100,
+      "radius_km": 4,
+      "primary_shelter": "Sports Complex Evacuation Site",
+      "emergency_contacts": {
+        "police": "100",
+        "fire": "101",
+        "medical": "108",
+        "disaster_management": "1070"
+      }
+    }
+  ],
+  "high_risk_areas": [
+    {
+      "name": "Flood Prone Area - River Valley",
+      "latitude": 28.6120,
+      "longitude": 77.2095,
+      "risk_type": "Flood",
+      "evacuation_route": "Move to higher ground - Sports Complex",
+      "warning_level": "High during monsoon season"
+    },
+    {
+      "name": "Seismic Zone - Old Building District",
+      "latitude": 28.6155,
+      "longitude": 77.2075,
+      "risk_type": "Earthquake",
+      "evacuation_route": "Open spaces in Central Park",
+      "warning_level": "Moderate - Building safety checks recommended"
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "Central Park",
+      "latitude": 28.6145,
+      "longitude": 77.2085,
+      "type": "Safe Assembly Point",
+      "description": "Open space suitable for emergency assembly"
+    },
+    {
+      "name": "City Hospital",
+      "latitude": 28.6135,
+      "longitude": 77.2095,
+      "type": "Medical Facility",
+      "description": "Primary medical emergency facility"
+    },
+    {
+      "name": "Fire Station Central",
+      "latitude": 28.6142,
+      "longitude": 77.2088,
+      "type": "Emergency Service",
+      "description": "Central fire and rescue station"
+    }
+  ]
+}

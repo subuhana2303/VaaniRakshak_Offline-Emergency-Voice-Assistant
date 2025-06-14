@@ -1,0 +1,28 @@
+modules = ["python-3.11"]
+
+[nix]
+channel = "stable-24_05"
+packages = ["espeak-ng"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "VaaniRakshak Server"
+
+[[workflows.workflow]]
+name = "VaaniRakshak Server"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pip install vosk pyttsx3 pyaudio && python main.py"
+
+[deployment]
+run = ["sh", "-c", "pip install vosk pyttsx3 pyaudio && python main.py"]
