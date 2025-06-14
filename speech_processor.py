@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 class SpeechProcessor:
     """Handles speech recognition and text-to-speech"""
     
-    def __init__(self, model_path: str = None, sample_rate: int = 16000):
+    def __init__(self, model_path: Optional[str] = None, sample_rate: int = 16000):
         self.model_path = model_path or Config.VOSK_MODEL_PATH
         self.sample_rate = sample_rate
         
@@ -94,13 +94,28 @@ class SpeechProcessor:
         try:
             self.audio = pyaudio.PyAudio()
             
-            # Find default input device
-            default_device = self.audio.get_default_input_device_info()
-            logger.info(f"Using audio device: {default_device['name']}")
+            # Check if any input devices are available
+            device_count = self.audio.get_device_count()
+            input_devices = []
             
+            for i in range(device_count):
+                device_info = self.audio.get_device_info_by_index(i)
+                max_input_channels = device_info.get('maxInputChannels', 0)
+                if isinstance(max_input_channels, (int, float)) and int(max_input_channels) > 0:
+                    input_devices.append(device_info)
+            
+            if input_devices:
+                # Use the first available input device
+                default_device = input_devices[0]
+                logger.info(f"Using audio device: {default_device['name']}")
+            else:
+                logger.warning("No audio input devices found - running in text-only mode")
+                # Don't raise exception, allow graceful degradation
+                
         except Exception as e:
-            logger.error(f"Failed to initialize audio: {e}")
-            raise
+            logger.warning(f"Audio initialization failed: {e} - running in text-only mode")
+            # Don't raise exception, allow graceful degradation
+            self.audio = None
     
     def _initialize_tts(self):
         """Initialize text-to-speech engine"""
@@ -134,6 +149,10 @@ class SpeechProcessor:
         if self.is_recognizing:
             return
         
+        if not self.audio:
+            logger.info("No audio device available - speech recognition disabled")
+            return
+            
         try:
             # Open audio stream
             self.stream = self.audio.open(
@@ -157,7 +176,7 @@ class SpeechProcessor:
             
         except Exception as e:
             logger.error(f"Failed to start speech recognition: {e}")
-            raise
+            # Don't raise exception, allow graceful degradation
     
     def _recognition_loop(self):
         """Main speech recognition loop"""
