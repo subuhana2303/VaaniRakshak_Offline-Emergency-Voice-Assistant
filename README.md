@@ -8,7 +8,7 @@
 
 ### 🖼️ VaaniRakshak GUI Screenshot
 
-![VaaniRakshak Screenshot](https://github.com/your-username/VaaniRakshak/blob/main/assets/vaani_screenshot.png?raw=true)
+![Screenshot 2025-06-14 204059](https://github.com/user-attachments/assets/6b1cd43f-b0be-4c3b-8f9d-e7d399d8c4b6)
 
 
 - 🔴 Emergency-themed interface
