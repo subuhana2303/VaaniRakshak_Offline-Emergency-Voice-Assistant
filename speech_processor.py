@@ -155,12 +155,26 @@ class SpeechProcessor:
         if self.is_recognizing:
             return
         
+        if self.use_virtual_audio:
+            # Use virtual audio system
+            self.virtual_audio.start_virtual_audio()
+            self.is_recognizing = True
+            
+            # Start virtual recognition thread
+            self.recognition_thread = threading.Thread(
+                target=self._virtual_recognition_loop, 
+                daemon=True
+            )
+            self.recognition_thread.start()
+            logger.info("Virtual microphone recognition started - simulating voice input")
+            return
+            
         if not self.audio:
             logger.info("No audio device available - speech recognition disabled")
             return
             
         try:
-            # Open audio stream
+            # Open physical audio stream
             self.stream = self.audio.open(
                 format=pyaudio.paInt16,
                 channels=1,
@@ -178,11 +192,14 @@ class SpeechProcessor:
             )
             self.recognition_thread.start()
             
-            logger.info("Speech recognition started")
+            logger.info("Physical microphone recognition started")
             
         except Exception as e:
             logger.error(f"Failed to start speech recognition: {e}")
-            # Don't raise exception, allow graceful degradation
+            # Fall back to virtual audio
+            logger.info("Falling back to virtual microphone")
+            self.use_virtual_audio = True
+            self.start_recognition()
     
     def _recognition_loop(self):
         """Main speech recognition loop"""
@@ -206,6 +223,20 @@ class SpeechProcessor:
             except Exception as e:
                 logger.error(f"Recognition loop error: {e}")
                 time.sleep(0.1)
+    
+    def _virtual_recognition_loop(self):
+        """Virtual microphone recognition loop"""
+        # Enable auto phrase injection for continuous demo
+        def phrase_callback(phrase):
+            if self.is_recognizing:
+                self.recognition_queue.put(phrase)
+                logger.info(f"Virtual microphone recognized: {phrase}")
+        
+        self.virtual_audio.enable_auto_phrase_injection(phrase_callback)
+        
+        # Keep the loop running while recognition is active
+        while self.is_recognizing:
+            time.sleep(1.0)
     
     def _fallback_recognition(self, audio_data):
         """Fallback recognition when Vosk is not available"""
@@ -236,6 +267,9 @@ class SpeechProcessor:
     def stop_recognition(self):
         """Stop speech recognition"""
         self.is_recognizing = False
+        
+        if self.use_virtual_audio:
+            self.virtual_audio.stop_virtual_audio()
         
         if self.stream:
             self.stream.stop_stream()
@@ -269,7 +303,7 @@ class SpeechProcessor:
     
     def is_ready(self) -> bool:
         """Check if speech processor is ready"""
-        return (self.audio is not None and 
+        return ((self.audio is not None or self.use_virtual_audio) and 
                 self.tts_engine is not None and 
                 (self.rec is not None or True))  # Allow fallback mode
     
