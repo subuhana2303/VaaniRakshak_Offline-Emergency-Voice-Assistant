@@ -20,7 +20,7 @@
 
 ### 🎬 Demo Video
 
-🔗 [Watch the video demo on Google Drive](https://drive.google.com/file/d/YOUR_VIDEO_ID/view?usp=sharing)
+🔗 [Watch the video demo on Google Drive](https://drive.google.com/file/d/1_eOUWAw4IftcjcFsCsrCU14sKMkdXI07/view?usp=drive_link)
 
 > ✅ *Watch the assistant recognize phrases like “I need help”, “medical emergency”, and reply with shelter info, alerts, and voice feedback.*
 
