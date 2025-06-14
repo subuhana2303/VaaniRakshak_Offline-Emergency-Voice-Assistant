@@ -16,6 +16,7 @@ import pyaudio
 import pyttsx3
 
 from config import Config
+from virtual_audio import VirtualAudioManager
 
 logger = logging.getLogger(__name__)
 
@@ -39,6 +40,10 @@ class SpeechProcessor:
         self.recognition_queue = queue.Queue()
         self.is_recognizing = False
         self.recognition_thread = None
+        
+        # Virtual audio system
+        self.virtual_audio = VirtualAudioManager()
+        self.use_virtual_audio = False
         
         self._initialize_components()
     
@@ -109,13 +114,14 @@ class SpeechProcessor:
                 default_device = input_devices[0]
                 logger.info(f"Using audio device: {default_device['name']}")
             else:
-                logger.warning("No audio input devices found - running in text-only mode")
-                # Don't raise exception, allow graceful degradation
+                logger.warning("No physical audio input devices found - enabling virtual microphone")
+                self.audio = None
+                self.use_virtual_audio = True
                 
         except Exception as e:
-            logger.warning(f"Audio initialization failed: {e} - running in text-only mode")
-            # Don't raise exception, allow graceful degradation
+            logger.warning(f"Physical audio initialization failed: {e} - enabling virtual microphone")
             self.audio = None
+            self.use_virtual_audio = True
     
     def _initialize_tts(self):
         """Initialize text-to-speech engine"""
