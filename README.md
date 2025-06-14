@@ -6,9 +6,10 @@
 
 ## 📸 Output Preview
 
-### 🖥️ GUI Interface
+### 🖼️ VaaniRakshak GUI Screenshot
 
-<img src="assets/vaani_gui_preview.png" alt="VaaniRakshak GUI Screenshot" width="600"/>
+![VaaniRakshak Screenshot](https://github.com/your-username/VaaniRakshak/blob/main/assets/vaani_screenshot.png?raw=true)
+
 
 - 🔴 Emergency-themed interface
 - 🎙️ Start/Stop voice control
@@ -17,9 +18,9 @@
 
 ---
 
-## 🎬 Demo Video
+### 🎬 Demo Video
 
-https://user-images.githubusercontent.com/your-username/your-repo/assets/demo_vaani_voice_assistant.mp4
+🔗 [Watch the video demo on Google Drive](https://drive.google.com/file/d/YOUR_VIDEO_ID/view?usp=sharing)
 
 > ✅ *Watch the assistant recognize phrases like “I need help”, “medical emergency”, and reply with shelter info, alerts, and voice feedback.*
 
@@ -78,6 +79,27 @@ https://user-images.githubusercontent.com/your-username/your-repo/assets/demo_va
 | Audio Input/Output| PyAudio                      |
 | GUI              | Tkinter (standard Python GUI) |
 | Data Storage     | JSON                          |
+
+---
+
+## 📂 Project Structure
+
+```
+VaaniRakshak/
+├── main.py                      # Entry point
+├── voice_assistant.py          # Core controller
+├── speech_processor.py         # STT + TTS
+├── emergency_handler.py        # Logic/Response
+├── gui_interface.py            # Tkinter GUI
+├── config.py                   # Configuration
+├── data/
+│   ├── emergency_phrases.json
+│   ├── shelters.json
+│   └── locations.json
+├── models/
+│   └── vosk-model-small-en-us-0.15/
+└── README.md
+```
 
 ---
 
@@ -178,8 +200,10 @@ Pull requests are welcome! If you'd like to contribute improvements, localizatio
 
 ## 👤 Author
 
-**Subuhana Basheer**  
+**Subuhana B**  
 *Developer | Tech for Social Good | Voice AI Enthusiast*
+**email:** subuhanabasheer41@gmail.com
+**Github:** Subuhana2303
 
 ---
 
