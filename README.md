@@ -202,7 +202,9 @@ Pull requests are welcome! If you'd like to contribute improvements, localizatio
 
 **Subuhana B**  
 *Developer | Tech for Social Good | Voice AI Enthusiast*
+
 **email:** subuhanabasheer41@gmail.com
+
 **Github:** Subuhana2303
 
 ---
