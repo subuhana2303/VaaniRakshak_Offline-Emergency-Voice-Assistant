@@ -1,124 +1,187 @@
-# VaaniRakshak - Offline Emergency Voice Assistant
+# 🛡️ VaaniRakshak: Offline Emergency Voice Assistant
 
-## Overview
+**VaaniRakshak** is an intelligent, offline voice assistant tailored for disaster and emergency response scenarios. Designed to operate **without internet connectivity**, it provides real-time assistance using voice commands, helping users locate shelters, access emergency services, and receive critical information — even in infrastructure-compromised environments.
 
-VaaniRakshak is an offline voice assistant designed for disaster emergency situations. The application provides voice-activated emergency assistance without requiring internet connectivity, making it ideal for disaster scenarios where network infrastructure may be compromised. The system combines speech recognition, natural language processing, and text-to-speech capabilities to help users find emergency shelters, get medical assistance, and access critical information during crisis situations.
+---
 
-## System Architecture
+## 📸 Output Preview
 
-### Core Architecture Pattern
-The application follows a modular architecture with clear separation of concerns:
+### 🖥️ GUI Interface
 
-- **Voice Assistant Core**: Central coordinator managing all components
-- **Speech Processing**: Handles speech-to-text and text-to-speech operations
-- **Emergency Handler**: Processes emergency requests and provides appropriate responses
-- **GUI Interface**: Provides accessible graphical interface for users
-- **Configuration Management**: Centralized configuration system
+<img src="assets/vaani_gui_preview.png" alt="VaaniRakshak GUI Screenshot" width="600"/>
 
-### Technology Stack
-- **Language**: Python 3.11
-- **Speech Recognition**: Vosk (offline speech recognition)
-- **Text-to-Speech**: pyttsx3 (cross-platform TTS)
-- **Audio Processing**: PyAudio for real-time audio handling
-- **GUI Framework**: Tkinter for cross-platform desktop interface
-- **Data Storage**: JSON files for emergency data (phrases, shelters, locations)
+- 🔴 Emergency-themed interface
+- 🎙️ Start/Stop voice control
+- ✍️ Manual text input
+- 🧭 Real-time updates and response messages
 
-### Architecture Rationale
-The offline-first architecture was chosen to ensure reliability during disasters when internet connectivity is unavailable. Vosk was selected over cloud-based solutions for its offline capabilities, while pyttsx3 provides reliable TTS without external dependencies.
+---
 
-## Key Components
+## 🎬 Demo Video
 
-### Voice Assistant (`voice_assistant.py`)
-- **Purpose**: Main orchestrator coordinating all system components
-- **Responsibilities**: 
-  - Initialize and manage speech processor and emergency handler
-  - Coordinate listening sessions and response generation
-  - Provide callbacks for GUI integration
+https://user-images.githubusercontent.com/your-username/your-repo/assets/demo_vaani_voice_assistant.mp4
 
-### Speech Processor (`speech_processor.py`)
-- **Purpose**: Handle all speech-related operations
-- **Key Features**:
-  - Real-time speech recognition using Vosk
-  - Text-to-speech synthesis with pyttsx3
-  - Audio stream management with PyAudio
-  - Configurable speech parameters (rate, volume, voice preference)
+> ✅ *Watch the assistant recognize phrases like “I need help”, “medical emergency”, and reply with shelter info, alerts, and voice feedback.*
 
-### Emergency Handler (`emergency_handler.py`)
-- **Purpose**: Process emergency requests and generate appropriate responses
-- **Capabilities**:
-  - Parse emergency phrases and intents
-  - Locate nearby emergency shelters
-  - Provide medical and fire emergency guidance
-  - Calculate distances and provide location-based assistance
+---
 
-### GUI Interface (`gui_interface.py`)
-- **Purpose**: Provide accessible graphical interface
-- **Features**:
-  - Real-time conversation display
-  - Manual text input option
-  - Visual status indicators
-  - Control buttons for start/stop operations
+## 📌 Features
 
-### Configuration System (`config.py`)
-- **Purpose**: Centralized configuration management
-- **Settings**: Audio parameters, recognition thresholds, GUI dimensions, emergency response delays
+- 🎙️ **Offline Speech Recognition** using [Vosk](https://alphacephei.com/vosk/)
+- 🗣️ **Text-to-Speech Synthesis** with `pyttsx3`
+- 🖥️ **User-Friendly GUI** powered by Tkinter
+- 📡 **Emergency Response Engine** with shelter lookup and SMS alert simulation
+- 🌍 **Location-aware guidance** (mocked for offline support)
+- 🔧 Fully modular and configurable architecture
 
-## Data Flow
+---
 
-### Speech Recognition Flow
-1. Audio input captured via PyAudio
-2. Real-time processing through Vosk speech recognition model
-3. Recognized text passed to Emergency Handler for intent analysis
-4. Response generated based on emergency type and location data
-5. Text-to-speech synthesis for audio response
-6. GUI updated with conversation history
+## 🧠 Use Case
 
-### Emergency Response Flow
-1. User voice input recognized and processed
-2. Emergency Handler analyzes text for emergency phrases
-3. Location-based shelter search performed using distance calculations
-4. Appropriate emergency response generated
-5. Response delivered via both audio and visual channels
+> “In disaster scenarios where internet access is disrupted, **VaaniRakshak** enables users to interact with emergency services and systems **hands-free, offline, and in real-time** — just by speaking.”
 
-## External Dependencies
+---
 
-### Core Dependencies
-- **Vosk**: Offline speech recognition model (requires model download)
-- **pyttsx3**: Cross-platform text-to-speech engine
-- **PyAudio**: Real-time audio I/O library
-- **tkinter**: GUI framework (included with Python)
+## 🏗️ Architecture Overview
 
-### System Dependencies
-- **espeak-ng**: Text-to-speech backend (installed via Nix)
-- **Python 3.11**: Runtime environment
-- **Audio system**: Microphone and speakers for voice interaction
+```
++---------------------+
+|   GUI Interface     |
++----------+----------+
+           ↓
++----------v----------+
+|   Voice Assistant   |  <-- Orchestrator
++----------+----------+
+           ↓
++----------v----------+
+|  Speech Processor   |  <-- STT + TTS
++----------+----------+
+           ↓
++----------v----------+
+| Emergency Handler   |  <-- Logic + Lookup
++----------+----------+
+           ↓
++----------v----------+
+| Configuration Layer |
++---------------------+
+```
 
-### Data Dependencies
-- Emergency phrases database (`data/emergency_phrases.json`)
-- Shelter locations database (`data/shelters.json`)
-- Geographic locations database (`data/locations.json`)
+---
 
-## Deployment Strategy
+## 💻 Technology Stack
 
-### Local Development
-- Uses Replit with Nix package management
-- Automatic dependency installation via pip
-- Vosk model downloaded on first run (fallback mode available)
+| Layer             | Tool/Library                  |
+|------------------|-------------------------------|
+| Programming Lang | Python 3.11                   |
+| Speech Recognition | Vosk (offline)              |
+| Text-to-Speech   | pyttsx3                       |
+| Audio Input/Output| PyAudio                      |
+| GUI              | Tkinter (standard Python GUI) |
+| Data Storage     | JSON                          |
 
-### Production Considerations
-- Offline operation is primary requirement
-- Local model storage for speech recognition
-- JSON-based data storage for emergency information
-- Cross-platform compatibility (Windows, macOS, Linux)
+---
 
-### Deployment Commands
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/VaaniRakshak.git
+cd VaaniRakshak
+```
+
+### 2. Install Dependencies
+
 ```bash
 pip install vosk pyttsx3 pyaudio
+```
+
+> 💡 If `pyaudio` installation fails:
+```bash
+pip install pipwin
+pipwin install pyaudio
+```
+
+---
+
+### 3. Download Vosk Model
+
+Download [`vosk-model-small-en-us-0.15`](https://alphacephei.com/vosk/models) and extract it here:
+
+```
+VaaniRakshak/
+└── models/
+    └── vosk-model-small-en-us-0.15/
+        ├── am/
+        ├── conf/
+        ├── model.conf
+        └── ...
+```
+
+---
+
+## ▶️ Run the Application
+
+```bash
 python main.py
 ```
 
-## Changelog
-- June 14, 2025. Initial setup
+---
 
-## User Preferences
-Preferred communication style: Simple, everyday language.
+## 🧪 Sample Voice Commands
+
+- `"I need help"`
+- `"Nearest shelter"`
+- `"Medical emergency"`
+- `"Fire alert"`
+- `"Exit"`
+
+---
+
+## 📦 Deployment
+
+### 📁 Build an Executable (.exe) – Windows
+
+Install [PyInstaller](https://pyinstaller.org/):
+
+```bash
+pip install pyinstaller
+```
+
+Then build:
+
+```bash
+pyinstaller --noconfirm --onefile --windowed main.py
+```
+
+Place `models/` and `data/` folders alongside the `.exe`.
+
+---
+
+## 🧾 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! If you'd like to contribute improvements, localization, or accessibility features, please open an issue.
+
+---
+
+## 📅 Changelog
+
+- **2025-06-14** – Initial release with full offline assistant functionality
+
+---
+
+## 👤 Author
+
+**Subuhana Basheer**  
+*Developer | Tech for Social Good | Voice AI Enthusiast*
+
+---
+
+> “VaaniRakshak speaks for you — when your voice is the only tool you have.”
+
