@@ -1,0 +1,247 @@
+2025-06-14 06:36:32,501 - speech_processor - WARNING - Vosk model not found at models/vosk-model-small-en-us-0.15. Using fallback configuration.
+2025-06-14 06:36:32,502 - speech_processor - INFO - For full functionality, download a Vosk model from https://alphacephei.com/vosk/models
+2025-06-14 06:36:32,502 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 06:36:32,536 - speech_processor - ERROR - Failed to initialize audio: No Default Input Device Available
+2025-06-14 06:36:32,536 - speech_processor - ERROR - Failed to initialize speech processor: No Default Input Device Available
+2025-06-14 06:36:32,537 - voice_assistant - ERROR - Failed to initialize voice assistant: No Default Input Device Available
+2025-06-14 06:36:32,537 - __main__ - ERROR - Failed to initialize components: No Default Input Device Available
+2025-06-14 06:37:27,383 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 06:37:27,391 - speech_processor - WARNING - No audio input devices found - running in text-only mode
+2025-06-14 06:37:28,329 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 06:37:28,330 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 06:37:28,330 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 06:37:28,330 - emergency_handler - INFO - Mock location set: {'latitude': 28.613042120689826, 'longitude': 77.21285125741494, 'accuracy': '50 meters', 'timestamp': '2025-06-14T06:37:28.330737'}
+2025-06-14 06:37:28,330 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 06:37:28,439 - gui_interface - INFO - GUI interface created
+2025-06-14 06:37:28,439 - __main__ - INFO - All components initialized successfully
+2025-06-14 06:37:34,622 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 06:37:34,630 - speech_processor - WARNING - No audio input devices found - running in text-only mode
+2025-06-14 06:37:34,809 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 06:37:34,809 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 06:37:34,810 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 06:37:34,810 - emergency_handler - INFO - Mock location set: {'latitude': 28.610647499442052, 'longitude': 77.21805622222578, 'accuracy': '50 meters', 'timestamp': '2025-06-14T06:37:34.810391'}
+2025-06-14 06:37:34,810 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 06:37:34,927 - gui_interface - INFO - GUI interface created
+2025-06-14 06:37:34,928 - __main__ - INFO - All components initialized successfully
+2025-06-14 11:28:38,767 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 11:28:38,889 - speech_processor - WARNING - No audio input devices found - running in text-only mode
+2025-06-14 11:28:42,096 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 11:28:42,098 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 11:28:42,100 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 11:28:42,100 - emergency_handler - INFO - Mock location set: {'latitude': 28.615630823520092, 'longitude': 77.20118436361338, 'accuracy': '50 meters', 'timestamp': '2025-06-14T11:28:42.100715'}
+2025-06-14 11:28:42,100 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 11:28:44,020 - gui_interface - INFO - GUI interface created
+2025-06-14 11:28:44,020 - __main__ - INFO - All components initialized successfully
+2025-06-14 13:24:49,121 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 13:24:49,154 - speech_processor - WARNING - No audio input devices found - running in text-only mode
+2025-06-14 13:24:50,158 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 13:24:50,158 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 13:24:50,163 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 13:24:50,163 - emergency_handler - INFO - Mock location set: {'latitude': 28.613913115807946, 'longitude': 77.19982979560204, 'accuracy': '50 meters', 'timestamp': '2025-06-14T13:24:50.163869'}
+2025-06-14 13:24:50,164 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 13:24:51,360 - gui_interface - INFO - GUI interface created
+2025-06-14 13:24:51,360 - __main__ - INFO - All components initialized successfully
+2025-06-14 13:30:18,983 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 13:30:18,992 - speech_processor - WARNING - No physical audio input devices found - enabling virtual microphone
+2025-06-14 13:30:19,190 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 13:30:19,192 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 13:30:19,192 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 13:30:19,193 - emergency_handler - INFO - Mock location set: {'latitude': 28.617814164578057, 'longitude': 77.21221997110909, 'accuracy': '50 meters', 'timestamp': '2025-06-14T13:30:19.193038'}
+2025-06-14 13:30:19,193 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 13:30:19,301 - gui_interface - INFO - GUI interface created
+2025-06-14 13:30:19,301 - __main__ - INFO - All components initialized successfully
+2025-06-14 19:12:47,529 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 19:12:47,808 - speech_processor - INFO - Using audio device: Microsoft Sound Mapper - Input
+2025-06-14 19:12:47,864 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\SUBUHANA\\OneDrive\\Desktop\\My_projects\\EmergencyVoice\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-14 19:12:47,865 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\SUBUHANA\OneDrive\Desktop\My_projects\EmergencyVoice\.venv\Lib\site-packages\comtypes\gen'
+2025-06-14 19:12:48,049 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 19:12:48,050 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 19:12:48,051 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 19:12:48,052 - emergency_handler - INFO - Mock location set: {'latitude': 28.61360849381327, 'longitude': 77.2185135826732, 'accuracy': '50 meters', 'timestamp': '2025-06-14T19:12:48.051985'}
+2025-06-14 19:12:48,052 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 19:12:48,817 - gui_interface - INFO - GUI interface created
+2025-06-14 19:12:48,818 - __main__ - INFO - All components initialized successfully
+2025-06-14 19:12:57,297 - voice_assistant - INFO - Starting voice recognition...
+2025-06-14 19:12:57,298 - __main__ - INFO - Voice assistant started
+2025-06-14 19:12:57,670 - speech_processor - INFO - Physical microphone recognition started
+2025-06-14 19:14:07,516 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 19:14:07,517 - voice_assistant - INFO - Voice recognition stopped
+2025-06-14 19:14:07,517 - __main__ - INFO - Voice assistant stopped
+2025-06-14 19:20:32,159 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 19:20:32,406 - speech_processor - INFO - Using audio device: Microsoft Sound Mapper - Input
+2025-06-14 19:20:32,452 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\SUBUHANA\\OneDrive\\Desktop\\My_projects\\EmergencyVoice\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-14 19:20:32,452 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\SUBUHANA\OneDrive\Desktop\My_projects\EmergencyVoice\.venv\Lib\site-packages\comtypes\gen'
+2025-06-14 19:20:32,564 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 19:20:32,564 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 19:20:32,565 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 19:20:32,565 - emergency_handler - INFO - Mock location set: {'latitude': 28.609175788530656, 'longitude': 77.20841255167537, 'accuracy': '50 meters', 'timestamp': '2025-06-14T19:20:32.565625'}
+2025-06-14 19:20:32,565 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 19:20:33,157 - gui_interface - INFO - GUI interface created
+2025-06-14 19:20:33,158 - __main__ - INFO - All components initialized successfully
+2025-06-14 19:20:41,088 - voice_assistant - INFO - Starting voice recognition...
+2025-06-14 19:20:41,089 - __main__ - INFO - Voice assistant started
+2025-06-14 19:20:41,352 - speech_processor - INFO - Physical microphone recognition started
+2025-06-14 19:21:09,817 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 19:21:09,818 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 19:21:09,822 - voice_assistant - INFO - Voice recognition stopped
+2025-06-14 19:21:09,823 - __main__ - INFO - Voice assistant stopped
+2025-06-14 19:41:39,248 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 19:41:39,508 - speech_processor - INFO - Using audio device: Microsoft Sound Mapper - Input
+2025-06-14 19:41:39,566 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\SUBUHANA\\OneDrive\\Desktop\\My_projects\\EmergencyVoice\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-14 19:41:39,566 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\SUBUHANA\OneDrive\Desktop\My_projects\EmergencyVoice\.venv\Lib\site-packages\comtypes\gen'
+2025-06-14 19:41:39,800 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 19:41:39,800 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 19:41:39,802 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 19:41:39,802 - emergency_handler - INFO - Mock location set: {'latitude': 28.60803264393478, 'longitude': 77.21006721006329, 'accuracy': '50 meters', 'timestamp': '2025-06-14T19:41:39.802532'}
+2025-06-14 19:41:39,802 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 19:41:40,610 - gui_interface - INFO - GUI interface created
+2025-06-14 19:41:40,611 - __main__ - INFO - All components initialized successfully
+2025-06-14 19:41:51,421 - emergency_handler - INFO - Processing request: help me plz
+2025-06-14 19:41:51,443 - emergency_handler - INFO - Mock SMS Alert: [VaaniRakshak Alert] General emergency assistance requested
+Time: 2025-06-14 19:41:51
+Location: Lat: 28.6080, Lon: 77.2101
+2025-06-14 19:41:51,443 - speech_processor - INFO - Speaking: I'm here to help you in this emergency. I can help you find the nearest shelter, provide medical guidance, or connect you with emergency services. Say 'nearest shelter' to find safe places, or 'medical emergency' if you need medical assistance.
+2025-06-14 19:42:51,400 - emergency_handler - INFO - Processing request: can know about neat by shelter
+2025-06-14 19:42:51,422 - emergency_handler - INFO - Mock SMS Alert: [VaaniRakshak Alert] Shelter information sent: Riverside School Emergency Center
+Time: 2025-06-14 19:42:51
+Location: Lat: 28.6080, Lon: 77.2101
+2025-06-14 19:42:51,423 - speech_processor - INFO - Speaking: Here are the nearest emergency shelters:
+
+1. Riverside School Emergency Center
+   Address: 250 Oak Street, Riverside District
+   Distance: 577 meters
+   Capacity: 200 people
+   Facilities: Food Distribution, Basic Medical, Communications, Educational Support
+   Contact: Emergency Hotline: 108
+
+2. Westend Emergency Refuge
+   Address: 300 West Park Lane, Westend
+   Distance: 585 meters
+   Capacity: 180 people
+   Facilities: Food Service, Medical Aid, Mental Health Support, Communications
+   Contact: Emergency Hotline: 108
+
+Stay safe and move to the nearest shelter if possible.
+2025-06-14 19:44:53,938 - emergency_handler - INFO - Processing request: medical assistance
+2025-06-14 19:44:53,939 - emergency_handler - INFO - Mock SMS Alert: [VaaniRakshak Alert] General emergency assistance requested
+Time: 2025-06-14 19:44:53
+Location: Lat: 28.6080, Lon: 77.2101
+2025-06-14 19:44:53,940 - speech_processor - INFO - Speaking: I'm here to help you in this emergency. I can help you find the nearest shelter, provide medical guidance, or connect you with emergency services. Say 'nearest shelter' to find safe places, or 'medical emergency' if you need medical assistance.
+2025-06-14 19:45:28,467 - emergency_handler - INFO - Processing request: medical assistance
+2025-06-14 19:45:28,468 - emergency_handler - INFO - Mock SMS Alert: [VaaniRakshak Alert] General emergency assistance requested
+Time: 2025-06-14 19:45:28
+Location: Lat: 28.6080, Lon: 77.2101
+2025-06-14 19:45:28,469 - speech_processor - INFO - Speaking: I'm here to help you in this emergency. I can help you find the nearest shelter, provide medical guidance, or connect you with emergency services. Say 'nearest shelter' to find safe places, or 'medical emergency' if you need medical assistance.
+2025-06-14 19:47:00,502 - emergency_handler - INFO - Processing request: medical emergency
+2025-06-14 19:47:00,507 - emergency_handler - INFO - Mock SMS Alert: [VaaniRakshak Alert] General emergency assistance requested
+Time: 2025-06-14 19:47:00
+Location: Lat: 28.6080, Lon: 77.2101
+2025-06-14 19:47:00,507 - speech_processor - INFO - Speaking: I'm here to help you in this emergency. I can help you find the nearest shelter, provide medical guidance, or connect you with emergency services. Say 'nearest shelter' to find safe places, or 'medical emergency' if you need medical assistance.
+2025-06-14 19:57:02,384 - gui_interface - INFO - GUI interrupted by user
+2025-06-14 19:57:02,384 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 19:57:02,384 - voice_assistant - INFO - Voice recognition stopped
+2025-06-14 19:57:02,384 - __main__ - INFO - Voice assistant stopped
+2025-06-14 19:57:02,384 - __main__ - INFO - Application cleanup completed
+2025-06-14 20:01:46,326 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 20:01:46,531 - speech_processor - INFO - Using audio device: Microsoft Sound Mapper - Input
+2025-06-14 20:01:46,575 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\SUBUHANA\\OneDrive\\Desktop\\My_projects\\EmergencyVoice\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-14 20:01:46,575 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\SUBUHANA\OneDrive\Desktop\My_projects\EmergencyVoice\.venv\Lib\site-packages\comtypes\gen'
+2025-06-14 20:01:46,690 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 20:01:46,691 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 20:01:46,691 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 20:01:46,692 - emergency_handler - INFO - Mock location set: {'latitude': 28.61647327920527, 'longitude': 77.20347298523996, 'accuracy': '50 meters', 'timestamp': '2025-06-14T20:01:46.692104'}
+2025-06-14 20:01:46,692 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 20:01:47,422 - gui_interface - INFO - GUI interface created
+2025-06-14 20:01:47,422 - __main__ - INFO - All components initialized successfully
+2025-06-14 20:03:03,278 - emergency_handler - INFO - Processing request: help me
+2025-06-14 20:03:03,278 - emergency_handler - INFO - Mock SMS Alert: [VaaniRakshak Alert] General emergency assistance requested
+Time: 2025-06-14 20:03:03
+Location: Lat: 28.6165, Lon: 77.2035
+2025-06-14 20:03:03,278 - speech_processor - INFO - Speaking: I'm here to help you in this emergency. I can help you find the nearest shelter, provide medical guidance, or connect you with emergency services. Say 'nearest shelter' to find safe places, or 'medical emergency' if you need medical assistance.
+2025-06-14 20:03:36,076 - emergency_handler - INFO - Processing request: near shelter
+2025-06-14 20:03:36,077 - emergency_handler - INFO - Mock SMS Alert: [VaaniRakshak Alert] Shelter information sent: Northside Community Hall
+Time: 2025-06-14 20:03:36
+Location: Lat: 28.6165, Lon: 77.2035
+2025-06-14 20:03:36,077 - speech_processor - INFO - Speaking: Here are the nearest emergency shelters:
+
+1. Northside Community Hall
+   Address: 45 North Avenue, Northside
+   Distance: 350 meters
+   Capacity: 150 people
+   Facilities: Food Distribution, Basic Medical, Elderly Care
+   Contact: Emergency Hotline: 108
+
+2. Westend Emergency Refuge
+   Address: 300 West Park Lane, Westend
+   Distance: 565 meters
+   Capacity: 180 people
+   Facilities: Food Service, Medical Aid, Mental Health Support, Communications
+   Contact: Emergency Hotline: 108
+
+Stay safe and move to the nearest shelter if possible.
+2025-06-14 20:07:08,109 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 20:07:08,109 - voice_assistant - INFO - Voice recognition stopped
+2025-06-14 20:07:08,109 - __main__ - INFO - Voice assistant stopped
+2025-06-14 20:07:08,156 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 20:07:08,156 - voice_assistant - INFO - Voice recognition stopped
+2025-06-14 20:07:08,157 - __main__ - INFO - Voice assistant stopped
+2025-06-14 20:07:08,157 - __main__ - INFO - Application cleanup completed
+2025-06-14 20:07:08,187 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 20:07:14,263 - speech_processor - ERROR - Failed to load Vosk model: Failed to create a model
+2025-06-14 20:07:14,474 - speech_processor - INFO - Using audio device: Microsoft Sound Mapper - Input
+2025-06-14 20:07:14,511 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\SUBUHANA\\OneDrive\\Desktop\\My_projects\\EmergencyVoice\\.venv\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-14 20:07:14,511 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\SUBUHANA\OneDrive\Desktop\My_projects\EmergencyVoice\.venv\Lib\site-packages\comtypes\gen'
+2025-06-14 20:07:14,634 - speech_processor - INFO - TTS engine initialized successfully
+2025-06-14 20:07:14,634 - speech_processor - INFO - Speech processor initialized successfully
+2025-06-14 20:07:14,635 - emergency_handler - INFO - Emergency data loaded successfully
+2025-06-14 20:07:14,635 - emergency_handler - INFO - Mock location set: {'latitude': 28.618441862021996, 'longitude': 77.20678758146214, 'accuracy': '50 meters', 'timestamp': '2025-06-14T20:07:14.635243'}
+2025-06-14 20:07:14,635 - voice_assistant - INFO - Voice assistant components initialized
+2025-06-14 20:07:15,292 - gui_interface - INFO - GUI interface created
+2025-06-14 20:07:15,292 - __main__ - INFO - All components initialized successfully
+2025-06-14 20:07:49,973 - emergency_handler - INFO - Processing request: help me
+2025-06-14 20:07:49,973 - emergency_handler - INFO - Mock SMS Alert: [VaaniRakshak Alert] General emergency assistance requested
+Time: 2025-06-14 20:07:49
+Location: Lat: 28.6184, Lon: 77.2068
+2025-06-14 20:07:49,974 - speech_processor - INFO - Speaking: I'm here to help you in this emergency. I can help you find the nearest shelter, provide medical guidance, or connect you with emergency services. Say 'nearest shelter' to find safe places, or 'medical emergency' if you need medical assistance.
+2025-06-14 20:08:18,801 - emergency_handler - INFO - Processing request: shelter
+2025-06-14 20:08:18,801 - emergency_handler - INFO - Mock SMS Alert: [VaaniRakshak Alert] Shelter information sent: Northside Community Hall
+Time: 2025-06-14 20:08:18
+Location: Lat: 28.6184, Lon: 77.2068
+2025-06-14 20:08:18,802 - speech_processor - INFO - Speaking: Here are the nearest emergency shelters:
+
+1. Northside Community Hall
+   Address: 45 North Avenue, Northside
+   Distance: 283 meters
+   Capacity: 150 people
+   Facilities: Food Distribution, Basic Medical, Elderly Care
+   Contact: Emergency Hotline: 108
+
+2. Sports Complex Evacuation Site
+   Address: 75 Stadium Road, Sports District
+   Distance: 503 meters
+   Capacity: 500 people
+   Facilities: Large Capacity Housing, Food Service, Medical Station, Recreation Area
+   Contact: Emergency Hotline: 108
+
+Stay safe and move to the nearest shelter if possible.
+2025-06-14 20:09:30,271 - voice_assistant - INFO - Starting voice recognition...
+2025-06-14 20:09:30,271 - __main__ - INFO - Voice assistant started
+2025-06-14 20:09:30,516 - speech_processor - INFO - Physical microphone recognition started
+2025-06-14 20:09:43,717 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 20:09:43,717 - voice_assistant - INFO - Voice recognition stopped
+2025-06-14 20:09:43,717 - __main__ - INFO - Voice assistant stopped
+2025-06-14 20:09:43,780 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 20:09:51,389 - voice_assistant - INFO - Starting voice recognition...
+2025-06-14 20:09:51,389 - __main__ - INFO - Voice assistant started
+2025-06-14 20:09:51,422 - speech_processor - INFO - Physical microphone recognition started
+2025-06-14 20:09:57,370 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 20:09:57,370 - voice_assistant - INFO - Voice recognition stopped
+2025-06-14 20:09:57,371 - __main__ - INFO - Voice assistant stopped
+2025-06-14 20:09:57,452 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 20:10:08,507 - voice_assistant - INFO - Starting voice recognition...
+2025-06-14 20:10:08,507 - __main__ - INFO - Voice assistant started
+2025-06-14 20:10:08,540 - speech_processor - INFO - Physical microphone recognition started
+2025-06-14 20:10:19,003 - speech_processor - INFO - Speech recognition stopped
+2025-06-14 20:10:19,003 - voice_assistant - INFO - Voice recognition stopped
+2025-06-14 20:10:19,003 - __main__ - INFO - Voice assistant stopped
+2025-06-14 20:10:19,093 - speech_processor - INFO - Speech recognition stopped
